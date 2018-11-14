@@ -5,10 +5,17 @@ using namespace std;
 
 template <class T>
 class Node {
-    int x, y;
     T data;
-    Node* next;
-    Node* down;
+    public:
+        int x, y;
+        Node* next;
+        Node* down;
+        void set_Data(T dat){
+            data=dat;
+        }
+        T get_data(){
+            return data;
+        }
 };
 
 #endif
